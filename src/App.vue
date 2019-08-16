@@ -14,20 +14,26 @@
   src: url("assets/Inconsolata-Regular.ttf") format("truetype");
 }
 
+@import "assets/color-scheme.scss";
+
+body {
+  background-color: $cs-main-dark;
+  color: $cs-main-light;
+}
+
 #app {
   font-family: "Inconsolata", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 #nav {
   padding: 30px;
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: $cs-main-light;
     &.router-link-exact-active {
-      color: #42b983;
+      color: $cs-danger;
     }
   }
 }
