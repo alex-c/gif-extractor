@@ -9,8 +9,13 @@
 </template>
 
 <style lang="scss">
+@font-face {
+  font-family: "Inconsolata";
+  src: url("assets/Inconsolata-Regular.ttf") format("truetype");
+}
+
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "Inconsolata", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
